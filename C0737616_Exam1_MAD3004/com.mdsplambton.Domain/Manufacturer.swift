@@ -1,5 +1,5 @@
 //
-//  main.swift
+//  Manufacturer.swift
 //  C0737616_Exam1_MAD3004
 //
 //  Created by MacStudent on 2018-07-20.
@@ -8,7 +8,8 @@
 
 import Foundation
 
-print("Hello, World!")
-
-
-var o1 = Order()
+class Manufacturer{
+    
+    var manufacturerId : Int!
+    var manufacturerName : String!
+}
