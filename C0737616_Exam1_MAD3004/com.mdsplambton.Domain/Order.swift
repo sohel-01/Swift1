@@ -7,12 +7,12 @@
 //
 
 import Foundation
-class Order : IDisplay{
-    func display() {
+class Order : Product, IDisplay{
+    override func display() {
         <#code#>
     }
     
-    var orderId : Int8!
+    var orderId : Int!
     var orderDate : Date!
     var productArray : [String]!
     var orderTotal : Double!
@@ -21,7 +21,8 @@ class Order : IDisplay{
     func getOrderById(){
         
     }
-    init(orderId:Int8,OrderDate:Date,productDate:[String],orderTotal : Double) {
+    init(orderId:Int,OrderDate:Date,productArray:[String],orderTotal : Double) {
         <#statements#>
     }
+    var p1 = Product(productId: 100, productName: "Hard Drive", price: 120.00, quantity: 1)
 }

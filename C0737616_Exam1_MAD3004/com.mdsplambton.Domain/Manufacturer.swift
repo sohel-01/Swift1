@@ -12,4 +12,9 @@ class Manufacturer{
     
     var manufacturerId : Int!
     var manufacturerName : String!
+    
+    init(manufacturerId : Int,manufacturerName : String) {
+        self.manufacturerId = manufacturerId
+        self.manufacturerName = manufacturerName
+    }
 }

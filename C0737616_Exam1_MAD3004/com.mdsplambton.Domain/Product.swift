@@ -16,6 +16,8 @@ class Product: Manufacturer ,IDisplay{
     var productName : String!
     var price : Double!
     var quantity : Int!
-    
+    init(productId : Int,productName : String,price : Double,quantity : Int) {
+        super.init(manufacturerId: manufacturerId, manufacturerName: manufacturerName)
+    }
     
 }
