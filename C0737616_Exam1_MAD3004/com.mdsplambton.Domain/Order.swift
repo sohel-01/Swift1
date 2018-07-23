@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Order : Product {
+class Order{
     var orderId : Int!
     var orderDate : Date!
     var orderTotal : Double!
@@ -18,32 +18,28 @@ class Order : Product {
         
     }
     
-    init(orderId:Int,OrderDate:Date!,productId:Int,productName:String,price:Double,quantity:Int,manufacturerId:Int,manufacturerName:String) {
-              super.init(productId: productId , productName: productName, price: price, quantity: quantity, manufacturerId: manufacturerId, manufacturerName: manufacturerName)
-               self.orderId = orderId
-              self.orderDate = OrderDate
-           }
-    
-    override init(){
-        super.init()
-        self.orderId = -1
-        self.orderDate = nil
+    init(orderId:Int,orderDate:Date!,productArray:[Product]){
+        self.orderId = orderId
+        self.orderDate = orderDate
+        self.productArray = productArray
+        
     }
-    func orderDetails(){
-              print("Order ID : \(orderId!) Order Date : \(orderDate!) Product Name : \(productName!),\nProduct Price :\(price!),Quantity : \(quantity!),Manufacturer : \(manufacturerName!)")
-           }
     
-    func productPrice(){
-        print("ToTal Price is : \(price!)")
+
+    
+  func orderDetails(){
+        print("Order ID : \(orderId!) Order Date :\(orderDate!) \n Products Details :\(productArray)")
+    for Product in productArray{
+        Product.productDetails()
     }
-//  func orderDetails(){
-//        print("Order ID : \(orderId!) Order Date :\(orderDate!) \n Products Details :\(productArray)")
-//    for Product in productArray{
-//        Product.productDetails()
-//    }
-//    }
+    }
     
 }
+
+
+
+
+
 
 
 //    func productDetails(){
@@ -81,5 +77,15 @@ class Order : Product {
 //        return total
 //    }
 //,productId:Int,productName:String,price:Double,quantity:Int,manufacturerId:Int,manufacturerName:String
+//    init(orderId:Int,OrderDate:Date!,productId:Int,productName:String,price:Double,quantity:Int,manufacturerId:Int,manufacturerName:String) {
+//              super.init(productId: productId , productName: productName, price: price, quantity: quantity, manufacturerId: manufacturerId, manufacturerName: manufacturerName)
+//               self.orderId = orderId
+//              self.orderDate = OrderDate
+//           }
+
+
+//    func productPrice(){
+//        print("ToTal Price is : \(price!)")
+//    }
 
 
