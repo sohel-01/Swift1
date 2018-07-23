@@ -14,4 +14,9 @@ print("Hello, World!")
 //var o1 = Order(orderId: 1, OrderDate: Utils.getDate(year: 2018, month: 07, day: 21), productId: 1, productName: "Hard Drive", price: 120, quantity: 1, manufacturerId: 01, manufacturerName: "Segate")
 //o1.orderDetails()
 
-var o1 = Order()
+var o1 = Order(orderId: 01, OrderDate: Utils.getDate(year: 2018, month: 07, day: 22), productArray: [
+   Product(productId: 1, productName: "Hard Drive", price: 120.0, quantity: 1, manufacturerId: 01, manufacturerName: "Segate"),
+   Product(productId: 2, productName: "Zip Drive", price: 90.0, quantity: 1, manufacturerId: 02, manufacturerName: "Dell")
+   ]
+)
+//o1.orderDetails()

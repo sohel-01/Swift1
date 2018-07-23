@@ -13,6 +13,7 @@ class Product: Manufacturer{
     var productName : String!
     var price : Double!
     var quantity : Int!
+    var pDetails : String!
     override init(){
         super.init()
     }
@@ -24,8 +25,7 @@ class Product: Manufacturer{
         self.price = price
         self.quantity = quantity
     }
-    func productDetails(){
-        print("")
-    }
+    
+
     
 }
