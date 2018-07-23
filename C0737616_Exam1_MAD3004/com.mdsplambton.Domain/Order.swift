@@ -8,8 +8,7 @@
 
 import Foundation
 
-class Order{
-    
+class Order : Product {
     var orderId : Int!
     var orderDate : Date!
     var orderTotal : Double!
@@ -18,29 +17,42 @@ class Order{
     func getOrderById(){
         
     }
-    init(orderId:Int,OrderDate:Date!,productArray:[Product]){
-        //super.init()
-        self.orderId = orderId
-        self.orderDate = OrderDate
-    }
     
-    func orderDetails(){
-        print("Order ID : \(orderId!) Order Date :\(orderDate!)")
-        
+    init(orderId:Int,OrderDate:Date!,productId:Int,productName:String,price:Double,quantity:Int,manufacturerId:Int,manufacturerName:String) {
+              super.init(productId: productId , productName: productName, price: price, quantity: quantity, manufacturerId: manufacturerId, manufacturerName: manufacturerName)
+               self.orderId = orderId
+              self.orderDate = OrderDate
+           }
+    
+    override init(){
+        super.init()
+        self.orderId = -1
+        self.orderDate = nil
     }
-    func opDetails(){
-        for Product in self.productArray{
-            Product.productDetails()
-        }
+    func orderDetails(){
+              print("Order ID : \(orderId!) Order Date : \(orderDate!) Product Name : \(productName!),\nProduct Price :\(price!),Quantity : \(quantity!),Manufacturer : \(manufacturerName!)")
+           }
+    
+    func productPrice(){
+        print("ToTal Price is : \(price!)")
+    }
+//  func orderDetails(){
+//        print("Order ID : \(orderId!) Order Date :\(orderDate!) \n Products Details :\(productArray)")
+//    for Product in productArray{
+//        Product.productDetails()
+//    }
+//    }
     
 }
+
+
 //    func productDetails(){
 //      print("Product ID :\(productId!),Product Name : \(productName!), Quantity : \(quantity!),Manufacturer Name : \(manufacturerName!)")
 //
 //    }
     
 
-}
+
     // do not consider beloew code
     
 //    init(orderId:Int,OrderDate:Date!,productId:Int,productName:String,price:Double,quantity:Int,manufacturerId:Int,manufacturerName:String) {
