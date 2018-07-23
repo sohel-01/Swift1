@@ -11,12 +11,17 @@ class Order : Product{
     
     var orderId : Int!
     var orderDate : Date!
-    var productArray = [Product]()
     var orderTotal : Double{
         get{
             return price!
         }
     }
+    let productArray = [
+        Product(productId: 100, productName: "Hard Drive", price: 120.0, quantity: 1, manufacturerId: 001, manufacturerName: "Del"),
+        Product(productId: 200, productName: "Zip Drive", price: 90.0, quantity: 1, manufacturerId: 002, manufacturerName: "HP"),
+        Product(productId: 300, productName: "Floppy Drive", price: 50.0, quantity: 1, manufacturerId: 003, manufacturerName: "Bell"),
+        Product(productId: 400, productName: "Monitor", price: 300.0, quantity: 1, manufacturerId: 004, manufacturerName: "SamSung"),
+        Product(productId: 500, productName: "iPhone 7 Plus", price: 1200.0, quantity: 1, manufacturerId: 005, manufacturerName: "Apple")]
     
 //    func totalPrice(Price : Double...)->Double{
 //        var total : Double = price!
@@ -33,10 +38,6 @@ class Order : Product{
         
     }
 
-    var p1 = Product(productId: 100, productName: "Hard Drive", price: 120.0, quantity: 1, manufacturerId: 001, manufacturerName: "Del")
-    var p2 = Product(productId: 200, productName: "Zip Drive", price: 90.0, quantity: 1, manufacturerId: 002, manufacturerName: "HP")
-    var p3 = Product(productId: 300, productName: "Floppy Drive", price: 50.0, quantity: 1, manufacturerId: 003, manufacturerName: "Bell")
-    var p4 = Product(productId: 400, productName: "Monitor", price: 300.0, quantity: 1, manufacturerId: 004, manufacturerName: "SamSung")
-    var p5 = Product(productId: 500, productName: "iPhone 7 Plus", price: 1200.0, quantity: 1, manufacturerId: 005, manufacturerName: "Apple")
-  
+
+    
 }

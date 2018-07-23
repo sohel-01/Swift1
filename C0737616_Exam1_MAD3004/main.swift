@@ -11,4 +11,4 @@ import Foundation
 print("Hello, World!")
 
 
-var o1 = Order(orderId: 01, OrderDate: Utils.getDate(year: 2018, month: 07, day: 21), productArray: <#T##[Product]#>)
+var o1 = Order(orderId: 1, OrderDate: Utils.getDate(year: 2018, month: 07, day: 21), productArray: [Product(productId: 1, productName: "dell", price: 120, quantity: 1, manufacturerId: 01, manufacturerName: "dell")])
