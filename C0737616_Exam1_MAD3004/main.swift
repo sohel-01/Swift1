@@ -19,4 +19,5 @@ var o1 = Order(orderId: 01, OrderDate: Utils.getDate(year: 2018, month: 07, day:
    Product(productId: 2, productName: "Zip Drive", price: 90.0, quantity: 1, manufacturerId: 02, manufacturerName: "Dell")
    ]
 )
-//o1.orderDetails()
+o1.orderDetails()
+o1.opDetails()

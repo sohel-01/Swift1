@@ -27,7 +27,7 @@ class Product: Manufacturer{
     }
     
     func productDetails(){
-         print("Product ID :\(productId!),Product Name : \(productName!), Quantity : \(quantity!),Manufacturer Name : \(manufacturerName!)")
+        print("Product ID :\(productId!),Product Name : \(productName!), Quantity : \(quantity!),Manufacturer Name : \(manufacturerName!)")
        
         }
     

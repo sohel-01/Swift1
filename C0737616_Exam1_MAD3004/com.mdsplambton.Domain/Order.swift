@@ -26,22 +26,20 @@ class Order{
     
     func orderDetails(){
         print("Order ID : \(orderId!) Order Date :\(orderDate!)")
-
+        
     }
+    func opDetails(){
+        for Product in self.productArray{
+            Product.productDetails()
+        }
+    
+}
 //    func productDetails(){
 //      print("Product ID :\(productId!),Product Name : \(productName!), Quantity : \(quantity!),Manufacturer Name : \(manufacturerName!)")
 //
 //    }
     
-    
-    func tPrice(){
-        
-    }
-    func opArray(){
-        for Product in productArray{
-            
-        }
-    }
+
 }
     // do not consider beloew code
     
