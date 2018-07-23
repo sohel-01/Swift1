@@ -12,8 +12,13 @@ class Manufacturer{
     
     var manufacturerId : Int!
     var manufacturerName : String!
-    
+    init(){
+        print("---Manufacturer init()---")
+        self.manufacturerId = -1
+        self.manufacturerName = " "
+    }
     init(manufacturerId : Int,manufacturerName : String) {
+        print("---Manufacturer init(Param)---")
         self.manufacturerId = manufacturerId
         self.manufacturerName = manufacturerName
     }

@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class Product: Manufacturer ,IDisplay{
+class Product: Manufacturer{
     func display() {
         <#code#>
     }
@@ -16,8 +16,12 @@ class Product: Manufacturer ,IDisplay{
     var productName : String!
     var price : Double!
     var quantity : Int!
-    init(productId : Int,productName : String,price : Double,quantity : Int) {
+    init(productId : Int,productName : String,price : Double,quantity : Int,manufacturerId:Int,manufacturerName:String) {
         super.init(manufacturerId: manufacturerId, manufacturerName: manufacturerName)
+        self.productId = productId
+        self.productName = productName
+        self.price = price
+        self.quantity = quantity
     }
     
 }
