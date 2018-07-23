@@ -43,7 +43,7 @@ class Order{
         }
     }
 }
-    
+    // do not consider beloew code
     
 //    init(orderId:Int,OrderDate:Date!,productId:Int,productName:String,price:Double,quantity:Int,manufacturerId:Int,manufacturerName:String) {
 //       super.init(productId: productId , productName: productName, price: price, quantity: quantity, manufacturerId: manufacturerId, manufacturerName: manufacturerName)

@@ -26,6 +26,9 @@ class Product: Manufacturer{
         self.quantity = quantity
     }
     
-
+    func productDetails(){
+         print("Product ID :\(productId!),Product Name : \(productName!), Quantity : \(quantity!),Manufacturer Name : \(manufacturerName!)")
+       
+        }
     
 }
